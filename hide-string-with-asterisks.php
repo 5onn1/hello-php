@@ -15,4 +15,5 @@ function hide_digits($data, $replacement, $visible_digits) {
   return substr_replace($data, $rplc, 0, $data_length-$visible_digits);
 }
  echo hide_digits("123456789", "*", 4);
+# This prints: *****6789
 ?>
